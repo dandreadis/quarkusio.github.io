@@ -5,146 +5,1262 @@
         <title>Quarkus</title>
         <link>https://quarkus.io</link>
         <description>Quarkus: Supersonic Subatomic Java</description>
-        <lastBuildDate>Fri, 18 Sep 2020 14:11:23 +0000</lastBuildDate>
+        <lastBuildDate>Mon, 18 Mar 2024 22:48:48 +0000</lastBuildDate>
         
         <item>
-            <title>Quarkus 1.8.1.Final released - Bugfixes, RESTEasy Multipart extension</title>
+            <title>Quarkus 3.2.11.Final released - Maintenance LTS release</title>
             <link>
-                https://quarkus.io/blog/quarkus-1-8-1-final-released/
+                https://quarkus.io/blog/quarkus-3-2-11-final-released/
             </link>
             <description>
-                Today, we released Quarkus 1.8.1.Final with some bugfixes and documentation improvements. We also introduced a new RESTEasy Multipart extension to fix an recurring encoding issues with multipart. It is a safe upgrade for everyone using 1.8.0.Final. What&#8217;s new? This release is a maintenance release that fixes various bugs found in...
+                &lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Quarkus 3.2.11.Final, the eleventh maintenance release of the 3.2 LTS release train has been released.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This release includes the following security-related fixes:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://nvd.nist.gov/vuln/detail/CVE-2024-25710&quot;&gt;CVE-2024-25710&lt;/a&gt; Denial of service caused by an infinite loop for a corrupted DUMP file&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://nvd.nist.gov/vuln/detail/CVE-2024-1597&quot;&gt;CVE-2024-1597&lt;/a&gt; PostgreSQL JDBC Driver allows attacker to inject SQL if using PreferQueryMode=SIMPLE&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://access.redhat.com/security/cve/cve-2024-1023&quot;&gt;CVE-2024-1023&lt;/a&gt; memory leak due to the use of Netty FastThreadLocal data structures in Vertx&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://access.redhat.com/security/cve/CVE-2024-1300&quot;&gt;CVE-2024-1300&lt;/a&gt; memory leak when a TCP server is configured with TLS and SNI support&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://access.redhat.com/security/cve/CVE-2024-1726&quot;&gt;CVE-2024-1726&lt;/a&gt; security checks for some inherited endpoints performed after serialization in RESTEasy Reactive may trigger a denial of service&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;And the following component upgrades:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Apache Commons Compress 1.25.0 &amp;#8594; 1.26.0&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PostgeSQL JDBC Driver 42.6.0 &amp;#8594; 42.6.1&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SmallRye JWT 4.3.0 &amp;#8594; 4.4.0&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Vert.X 4.4.6 &amp;#8594; 4.4.8&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you are not already using a 3.2 release, please refer to &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.2&quot;&gt;our migration guide&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;known-issues-include&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#known-issues-include&quot;&gt;&lt;/a&gt;Known issues include:&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It should be a safe upgrade for anyone already using a 3.2.10.Final release.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;full-changelog&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#full-changelog&quot;&gt;&lt;/a&gt;Full changelog&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You can get &lt;a href=&quot;https://github.com/quarkusio/quarkus/releases/tag/3.2.11.Final&quot;&gt;the full changelog of 3.2.11.Final on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;come-join-us&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#come-join-us&quot;&gt;&lt;/a&gt;Come Join Us&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We value your feedback a lot so please report bugs, ask for improvements&amp;#8230;&amp;#8203; Let&amp;#8217;s build something great together!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you are a Quarkus user or just curious, don&amp;#8217;t be shy and join our welcoming community:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;provide feedback on &lt;a href=&quot;https://github.com/quarkusio/quarkus/issues&quot;&gt;GitHub&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;craft some code and &lt;a href=&quot;https://github.com/quarkusio/quarkus/pulls&quot;&gt;push a PR&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;discuss with us on &lt;a href=&quot;https://quarkusio.zulipchat.com/&quot;&gt;Zulip&lt;/a&gt; and on the &lt;a href=&quot;https://groups.google.com/d/forum/quarkus-dev&quot;&gt;mailing list&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ask your questions on &lt;a href=&quot;https://stackoverflow.com/questions/tagged/quarkus&quot;&gt;Stack Overflow&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
             </description>
-            <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
+            <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
             <guid>
-                https://quarkus.io/blog/quarkus-1-8-1-final-released/
+                https://quarkus.io/blog/quarkus-3-2-11-final-released/
             </guid>
+            
+            
+            
+            <author>Alexey Loubyansky (https://twitter.com/aloubyansky)</author>
+            
         </item>
         
         <item>
-            <title>Quarkus Tools for IntelliJ 1.1.0 released!</title>
+            <title>Quarkus Newsletter #42 - March</title>
             <link>
-                https://quarkus.io/blog/intellij-quarkus-tools-1.1.0/
+                https://quarkus.io/blog/quarkus-newsletter-42/
             </link>
             <description>
-                We are very pleased to announce the 1.1.0 release of Quarkus Tools for IntelliJ. This release brings support for YAML configuration files and bug fixes. application.yaml support Code completion (Ctrl + ENTER) Property documentation Select a property and press Ctrl+Q Syntax validation Wrong property key names or values are reported...
+                &lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Read this great article &quot;How to integrate Quarkus applications with OpenShift AI&quot; by Clement Escoffier to discover how to integrate cutting-edge OpenShift AI capabilities into your Java applications using the OpenShift AI integration with Quarkus.  Learn how to create a Java application that uses AI and large-language models (LLMs) by integrating the LangChain4j library and Red Hat build of Quarkus in &quot;How to use LLMs in Java with LangChain4j and Quarkus&quot; by Helber Belmiro. Nikhil Mungale wrote &quot;Connect a Quarkus app to an external SQL Server database&quot; to show how to use an external database with Quarkus and link an example application to an external Microsoft SQL Server database in this tutorial. Learn how to integrate Oracle NoSQL with Quarkus using JNoSQL for seamless cloud-native application development with Otavio Santana&amp;#8217;s article &quot;Unlocking the Power of Oracle NoSQL With Quarkus: Seamless Integration for Cloud-Age Applications&quot;. &quot;CRUDing NoSQL Data With Quarkus, Part One: MongoDB&quot; by Nicolas Duminil demonstrates how Quarkus, the supersonic, subatomic Java stack, greatly simplifies the NoSQL data persistence.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You will also see the latest Quarkus Insights episodes, top tweets and upcoming Quarkus attended events.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Check out &lt;a href=&quot;https://quarkus.io/newsletter/42/&quot;&gt;Newsletter #42: March&lt;/a&gt;!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Want to get newsletters in your inbox? &lt;a href=&quot;https://quarkus.io/newsletter&quot;&gt;Sign up for the newsletter&lt;/a&gt; using the on page form.&lt;/p&gt;
+&lt;/div&gt;
             </description>
-            <pubDate>Thu, 17 Sep 2020 00:00:00 +0000</pubDate>
+            <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
             <guid>
-                https://quarkus.io/blog/intellij-quarkus-tools-1.1.0/
+                https://quarkus.io/blog/quarkus-newsletter-42/
             </guid>
+            
+            
+            
+            <author>James Cobb (https://twitter.com/insectengine)</author>
+            
         </item>
         
         <item>
-            <title>Quarkus 1.8 released - Multiple Persistence Units, Micrometer, jbang, GraalVM 20.2</title>
+            <title>Quarkus 3.8.2 released - Maintenance release</title>
             <link>
-                https://quarkus.io/blog/quarkus-1-8-0-final-released/
+                https://quarkus.io/blog/quarkus-3-8-2-released/
             </link>
             <description>
-                We have been hard at work during Summer to bake Quarkus 1.8. It comes with some shiny new features, among them: Multiple persistence units support for the Hibernate ORM extension A new Micrometer extension jbang integration for easy Quarkus-based scripting An update to GraalVM 20.2 As usual, it also comes...
+                &lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Today, we released Quarkus 3.8.2, our first (we skipped 3.8.0) maintenance release for the 3.8 release train.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This release contains bugfixes and documentation improvements.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It should be a safe upgrade for anyone already using 3.8.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;update&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#update&quot;&gt;&lt;/a&gt;Update&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To update to Quarkus 3.8, we recommend updating to the latest version of the Quarkus CLI and run:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-bash hljs&quot; data-lang=&quot;bash&quot;&gt;quarkus update&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Note that &lt;code&gt;quarkus update&lt;/code&gt; can update your applications from any version of Quarkus (including 2.x) to Quarkus 3.8.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you are not already using 3.x, please refer to the &lt;a href=&quot;https://quarkus.io/blog/quarkus-3-0-final-released/&quot;&gt;3.0 announcement&lt;/a&gt; for all the details.
+You can also refer to &lt;a href=&quot;https://quarkus.io/blog/quarkus-3-upgrade/&quot;&gt;this blog post&lt;/a&gt; for additional details.
+Once you upgraded to 3.0, also have a look at the &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.1&quot;&gt;3.1&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.2&quot;&gt;3.2&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.3&quot;&gt;3.3&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.4&quot;&gt;3.4&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.5&quot;&gt;3.5&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.6&quot;&gt;3.6&lt;/a&gt;, and &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.7&quot;&gt;3.7&lt;/a&gt; migration guides.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;full-changelog&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#full-changelog&quot;&gt;&lt;/a&gt;Full changelog&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You can get &lt;a href=&quot;https://github.com/quarkusio/quarkus/releases/tag/3.8.2&quot;&gt;the full changelog of 3.8.2 on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;come-join-us&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#come-join-us&quot;&gt;&lt;/a&gt;Come Join Us&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We value your feedback a lot so please report bugs, ask for improvements&amp;#8230;&amp;#8203; Let&amp;#8217;s build something great together!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you are a Quarkus user or just curious, don&amp;#8217;t be shy and join our welcoming community:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;provide feedback on &lt;a href=&quot;https://github.com/quarkusio/quarkus/issues&quot;&gt;GitHub&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;craft some code and &lt;a href=&quot;https://github.com/quarkusio/quarkus/pulls&quot;&gt;push a PR&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;discuss with us on &lt;a href=&quot;https://quarkusio.zulipchat.com/&quot;&gt;Zulip&lt;/a&gt; and on the &lt;a href=&quot;https://groups.google.com/d/forum/quarkus-dev&quot;&gt;mailing list&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ask your questions on &lt;a href=&quot;https://stackoverflow.com/questions/tagged/quarkus&quot;&gt;Stack Overflow&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
             </description>
-            <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
+            <pubDate>Thu, 07 Mar 2024 00:00:00 +0000</pubDate>
             <guid>
-                https://quarkus.io/blog/quarkus-1-8-0-final-released/
+                https://quarkus.io/blog/quarkus-3-8-2-released/
             </guid>
+            
+            
+            
+            <author>Guillaume Smet (https://twitter.com/gsmet_)</author>
+            
         </item>
         
         <item>
-            <title>Handling paginated APIs with Mutiny</title>
+            <title>Quarkus 3.8 - Our new LTS version</title>
             <link>
-                https://quarkus.io/blog/mutiny-pagination/
+                https://quarkus.io/blog/quarkus-3-8-released/
             </link>
             <description>
-                At the beginning of the Mutiny adventure, my friend Alex came to me with an interesting problem. Alex wanted to retrieve data from a REST service in a reactive manner. So far, no problem, we have everything for this in our toolbox. But, this service, as many services, is using...
+                &lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It is with great pleasure that we are announcing the release of Quarkus 3.8,
+our new LTS release (see &lt;a href=&quot;https://quarkus.io/blog/lts-releases/&quot;&gt;this blog post&lt;/a&gt; for more information about our LTS releases).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;LTS releases are maintained for a period of 12 months.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The previous LTS release was 3.2 and a lot of exciting new features have been added to Quarkus since then.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;As we explained in &lt;a href=&quot;https://quarkus.io/blog/our-plans-for-quarkus-3-7-3-8-3-9-released/&quot;&gt;this blog post&lt;/a&gt;, 3.8 is the direct continuation of the 3.7 branch,
+so it doesn&amp;#8217;t contain any new features compared to 3.7 (at least for core features, see below for new features in Quarkus CXF).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It contains several additional fixes though, including a CVE fix for &lt;a href=&quot;https://nvd.nist.gov/vuln/detail/CVE-2024-1597&quot;&gt;CVE-2024-1597 - PostgreSQL JDBC Driver&lt;/a&gt;
+(we skipped 3.8.0 to include this particular fix).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It is a recommended upgrade for everyone, including people using the previous 3.2 LTS.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;update&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#update&quot;&gt;&lt;/a&gt;Update&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To update to Quarkus 3.8, we recommend updating to the latest version of the Quarkus CLI and run:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-bash hljs&quot; data-lang=&quot;bash&quot;&gt;quarkus update&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Note that &lt;code&gt;quarkus update&lt;/code&gt; can update your applications from any version of Quarkus (including 2.x) to Quarkus 3.8.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To migrate from 3.7, you don&amp;#8217;t have anything to do except updating the version.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you are not already using 3.x, please refer to the &lt;a href=&quot;https://quarkus.io/blog/quarkus-3-0-final-released/&quot;&gt;3.0 announcement&lt;/a&gt; for all the details.
+You can also refer to &lt;a href=&quot;https://quarkus.io/blog/quarkus-3-upgrade/&quot;&gt;this blog post&lt;/a&gt; for additional details.
+Once you upgraded to 3.0, also have a look at the &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.1&quot;&gt;3.1&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.2&quot;&gt;3.2&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.3&quot;&gt;3.3&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.4&quot;&gt;3.4&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.5&quot;&gt;3.5&lt;/a&gt;, and &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.6&quot;&gt;3.6&lt;/a&gt;, and &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.7&quot;&gt;3.7&lt;/a&gt; migration guides.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats-new&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#whats-new&quot;&gt;&lt;/a&gt;What&amp;#8217;s new?&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;coming-from-3-7&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#coming-from-3-7&quot;&gt;&lt;/a&gt;Coming from 3.7?&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Nothing much if you are coming from 3.7 as 3.8 is the direct continuation of 3.7.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It is a recommended upgrade though as 3.8 comes with bugfixes and security fixes.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;coming-from-3-2-lts&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#coming-from-3-2-lts&quot;&gt;&lt;/a&gt;Coming from 3.2 LTS?&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you are coming from our previous LTS, there is a lot to read and you should have a look at our announcements for:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://quarkus.io/blog/quarkus-3-3-0-released/&quot;&gt;3.3&lt;/a&gt; - OpenTelemetry improvements, Reactive Messaging Pulsar extension&amp;#8230;&amp;#8203;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://quarkus.io/blog/quarkus-3-4-1-released/&quot;&gt;3.4&lt;/a&gt; - Redis 7.2 and Flyway changes&amp;#8230;&amp;#8203;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://quarkus.io/blog/quarkus-3-5-0-released/&quot;&gt;3.5&lt;/a&gt; - Support for Java 21, OIDC enhancements&amp;#8230;&amp;#8203;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://quarkus.io/blog/quarkus-3-6-0-released/&quot;&gt;3.6&lt;/a&gt; - SSE improvements, OIDC and security-related enhancements&amp;#8230;&amp;#8203;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://quarkus.io/blog/quarkus-3-7-released/&quot;&gt;3.7&lt;/a&gt; - Java 17 as the baseline, Hibernate ORM 6.4, support for Micrometer &lt;code&gt;@MeterTag&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Make sure you have a look at the migration guides mentioned above when you update from 3.2 to 3.8.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;quarkus-cxf&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#quarkus-cxf&quot;&gt;&lt;/a&gt;Quarkus CXF&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Quarkus CXF is part of the Quarkus Platform and has been updated for Quarkus 3.8.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This new version of Quarkus CXF includes the following changes:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Keeping major.minor version in sync with Quarkus&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Logging extension removed from the documentation and code.quarkus.io&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Santuario XMLSec extension moved to Quarkus CXF&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Improved documentation&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The detailed release notes can be found in the &lt;a href=&quot;https://docs.quarkiverse.io/quarkus-cxf/dev/release-notes/3.8.0.html&quot;&gt;Quarkus CXF documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;full-changelog&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#full-changelog&quot;&gt;&lt;/a&gt;Full changelog&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You can get the full changelog of &lt;a href=&quot;https://github.com/quarkusio/quarkus/releases/tag/3.8.1&quot;&gt;3.8.1&lt;/a&gt; on GitHub.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;contributors&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#contributors&quot;&gt;&lt;/a&gt;Contributors&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Quarkus community is growing and has now &lt;a href=&quot;https://github.com/quarkusio/quarkus/graphs/contributors&quot;&gt;912 contributors&lt;/a&gt;.
+Many many thanks to each and everyone of them.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In particular for the 3.8 release, thanks to Ales Justin, Alex Katlein, Alex Martel, Alexey Loubyansky, Andy Damevin, Bas Passon, Benedikt Werner, brunobat, Christian Thiel, Clement Escoffier, Davide D&amp;#8217;Alto, Dimitris Kontokostas, Falko Modler, Foivos Zakkak, George Gastaldi, Georgios Andrianakis, Guillaume Smet, Hendrik Schmitz, Holly Cummins, Ioannis Canellos, James Netherton, Jan Martiska, Jiří Locker, Julien Ponge, Katia Aresti, Ladislav Thon, Loïc Mathieu, Luke Morfill, luneo7, Marcel Stör, mariofusco, Martin Kouba, Matej Novotny, Matheus Cruz, Michael Edgar, Michal Vavřík, ObserverOfTime, Oliver Wiebeck, Ozan Gunalp, Peter Palaga, Phillip Kruger, Robert Stupp, Roberto Cortez, Romain BADINO, Sergey Beryozkin, SpaceFox, Steve Hawkins, stianst, The-Huginn, troosan, Waldemar Reusch, Yassin Hajaj, and Yoann Rodière.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;come-join-us&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#come-join-us&quot;&gt;&lt;/a&gt;Come Join Us&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We value your feedback a lot so please report bugs, ask for improvements&amp;#8230;&amp;#8203; Let&amp;#8217;s build something great together!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you are a Quarkus user or just curious, don&amp;#8217;t be shy and join our welcoming community:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;provide feedback on &lt;a href=&quot;https://github.com/quarkusio/quarkus/issues&quot;&gt;GitHub&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;craft some code and &lt;a href=&quot;https://github.com/quarkusio/quarkus/pulls&quot;&gt;push a PR&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;discuss with us on &lt;a href=&quot;https://quarkusio.zulipchat.com/&quot;&gt;Zulip&lt;/a&gt; and on the &lt;a href=&quot;https://groups.google.com/d/forum/quarkus-dev&quot;&gt;mailing list&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ask your questions on &lt;a href=&quot;https://stackoverflow.com/questions/tagged/quarkus&quot;&gt;Stack Overflow&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
             </description>
-            <pubDate>Tue, 15 Sep 2020 00:00:00 +0000</pubDate>
+            <pubDate>Wed, 28 Feb 2024 00:00:00 +0000</pubDate>
             <guid>
-                https://quarkus.io/blog/mutiny-pagination/
+                https://quarkus.io/blog/quarkus-3-8-released/
             </guid>
+            
+            
+            
+            <author>Guillaume Smet (https://twitter.com/gsmet_)</author>
+            
         </item>
         
         <item>
-            <title>Wipro Addresses Seismic Shift in Retail with Quarkus</title>
+            <title>The road to generated SDKs with Kiota using Quarkus</title>
             <link>
-                https://quarkus.io/blog/wipro-customer-story/
+                https://quarkus.io/blog/quarkus-kiota/
             </link>
             <description>
-                Retailers are aggressively adopting cloud technologies to keep up with changing customer needs, seasonal demands, and increased competition. Digital retailers, like Amazon, are disrupting the industry and retailers are looking for ways to remain competitive through technology. Retailers are making significant investments in the acquisition and adoption of cloud software...
+                &lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;the-challenge&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#the-challenge&quot;&gt;&lt;/a&gt;The Challenge&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Quarkus applications typically expose functionalities through API endpoints; here, we discuss how to easily consume those APIs and provide a smooth experience for our beloved users. While HTTP calls are easy to perform in any programming language and environment, when API complexity increases, and the number of available endpoints becomes uncountable, the need for better tools becomes apparent.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/images/posts/kiota/api_monster.jpeg&quot; alt=&quot;API monster&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;developer-experience-wishlist&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#developer-experience-wishlist&quot;&gt;&lt;/a&gt;Developer Experience Wishlist:&lt;/h3&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Fully typed programmatic APIs that make discovering and invoking HTTP endpoints safe, expressive, and elegant&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;An easy and idiomatic way to plug in various authentication mechanisms&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Smooth upgrades of the generated code when the description evolves&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Looking at the learnings from big companies facing this issue at scale, a viable solution is to ship multiple language-specific SDKs (Software Development Kits), i.e. for Java, Python, Go, JavaScript etc. For years, companies have been paying developers to manually provide the abstraction layer, making cloud services functionalities more easily accessible. This approach adds up to the maintenance burden, increases the operational complexity of releases, and, worst, is tedious for developers.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To pave the way for better tooling, new standards are being defined in the computer industry. For building HTTP-based APIs, &lt;a href=&quot;https://www.openapis.org&quot;&gt;OpenAPI&lt;/a&gt; stands out as a widely adopted option.
+In the context of this article we are going to assume you already have an OpenAPI description of the service.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;current-status-in-quarkus&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#current-status-in-quarkus&quot;&gt;&lt;/a&gt;Current Status in Quarkus&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Quarkus already provides an expressive and fully integrated &lt;a href=&quot;https://quarkus.io/guides/rest-client-reactive&quot;&gt;Rest Client&lt;/a&gt; to enable you to craft HTTP calls beautifully.
+Additionally, the &lt;a href=&quot;https://github.com/quarkiverse/quarkus-openapi-generator&quot;&gt;quarkus-openapi-generator&lt;/a&gt; is a mature Quarkus extension designed to generate client code from OpenAPI.
+This option is recommended when a tight integration with Quarkus is your primary focus.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In this post, we will introduce an alternative solution that addresses the same problem but makes different trade-offs to prioritize consistency across languages and frameworks.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;a-story-of-open-source-collaboration&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#a-story-of-open-source-collaboration&quot;&gt;&lt;/a&gt;A Story of Open Source Collaboration&lt;/h3&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;microsoft-kiota&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#microsoft-kiota&quot;&gt;&lt;/a&gt;Microsoft - Kiota&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Recognizing the challenges faced by the industry in generating comprehensive and efficient SDKs for diverse APIs, the &lt;a href=&quot;https://learn.microsoft.com/en-us/graph/overview&quot;&gt;Microsoft Graph&lt;/a&gt; team took the lead and introduced &lt;a href=&quot;https://github.com/microsoft/kiota&quot;&gt;Kiota&lt;/a&gt;, a CLI to streamline and automate the process of creating Software Development Kits (SDKs) for HTTP APIs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Kiota, born and raised in the open source, fosters collaboration and is ground-up designed with &lt;a href=&quot;https://learn.microsoft.com/en-gb/openapi/kiota/design&quot;&gt;modularity&lt;/a&gt; in mind. The Kiota project&amp;#8217;s community is extra welcoming, and it has demonstrated to be easy to open an issue not only for bugs but also to improve over the design decisions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Nowadays, Kiota demonstrates its value daily with the automated generation of SDKs for an incredible number of Microsoft services. More big industries, like &lt;a href=&quot;https://github.blog/2024-01-03-our-move-to-generated-sdks/&quot;&gt;GitHub&lt;/a&gt;, are quickly following the lead.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect3&quot;&gt;
+&lt;h4 id=&quot;red-hat-apicurio&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#red-hat-apicurio&quot;&gt;&lt;/a&gt;Red Hat - Apicurio&lt;/h4&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Being focused on APIs and having products built with a contract-first approach from OpenAPI specifications, the Apicurio team from Red Hat joined the effort on Kiota. The collaboration led to important milestones, directly blossomed from this collaboration:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;To make the usage of the generated code almost indistinguishable from a human-crafted product, we thoroughly implemented language-specific mangling of names.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To ease the fruition of the Kiota CLI from standard Java projects, we implemented a &lt;a href=&quot;https://github.com/kiota-community/kiota-java-extra?tab=readme-ov-file#maven-plugin&quot;&gt;Maven plugin&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To make frictionless the usage of Kiota on different and opinionated technological stacks, we ship alternative core libraries to let the user easily swap out from Microsoft&amp;#8217;s defaults (OkHttp + Gson): &lt;a href=&quot;https://github.com/kiota-community/kiota-java-extra?tab=readme-ov-file#serialization-jackson&quot;&gt;Jackson Serde&lt;/a&gt;, &lt;a href=&quot;https://github.com/kiota-community/kiota-java-extra?tab=readme-ov-file#http-vertx&quot;&gt;Vert.X Http&lt;/a&gt;, &lt;a href=&quot;https://github.com/kiota-community/kiota-java-extra?tab=readme-ov-file#http-jdk&quot;&gt;JDK Http&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;To increase compatibility with alternative Java runtimes, we completely removed the usage of reflection from all of the internals. Thus, Kiota-generated SDKs are automatically, and with zero configuration, able to be compiled and run on &lt;a href=&quot;https://www.graalvm.org/latest/reference-manual/native-image/&quot;&gt;GraalVM native-image&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Feeling the pain of un-maintained and various levels of maturity of URI Templates implementations (internally used to compose URLs), we rolled out a &lt;a href=&quot;https://github.com/std-uritemplate/std-uritemplate?tab=readme-ov-file#motivation&quot;&gt;dependency-free unified library&lt;/a&gt; available for all of the languages Kiota supports.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Along with additional bug fixes and improvements, we finally achieved a sweet spot where Kiota can be easily integrated and leveraged by mainstream and mature software projects. &lt;a href=&quot;https://github.com/Apicurio/apicurio-registry&quot;&gt;Apicurio Registry stands out among others&lt;/a&gt; shipping (and extensively leveraging it in the tests) the generated &lt;a href=&quot;https://github.com/Apicurio/apicurio-registry/tree/main/java-sdk&quot;&gt;Java SDK&lt;/a&gt; along with the &lt;a href=&quot;https://github.com/Apicurio/apicurio-registry/tree/main/python-sdk&quot;&gt;Python SDK&lt;/a&gt; and the &lt;a href=&quot;https://github.com/Apicurio/apicurio-registry/tree/main/go-sdk&quot;&gt;Go SDK&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;quarkus-meet-kiota&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#quarkus-meet-kiota&quot;&gt;&lt;/a&gt;Quarkus Meet Kiota&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Now that all the dots have been connected, the final and crucial step is a seamless integration with supersonic, subatomic applications leveraging Quarkus!
+This is the motivation behind the birth of the new &lt;code&gt;quarkus-kiota&lt;/code&gt; extension.
+The project is in its early stages, and we encourage you to try it out and provide feedback.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The codebase lives in the &lt;a href=&quot;https://github.com/quarkiverse/quarkus-kiota&quot;&gt;Quarkiverse&lt;/a&gt;, the project is listed in the &lt;a href=&quot;https://quarkus.io/extensions/io.quarkiverse.kiota/quarkus-kiota/&quot;&gt;extensions&lt;/a&gt; and the &lt;a href=&quot;https://docs.quarkiverse.io/quarkus-kiota/dev/index.html&quot;&gt;docs&lt;/a&gt; are available at the usual location.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Get started by adding this extension:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre&gt;quarkus ext add io.quarkiverse.kiota:quarkus-kiota&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Since it&amp;#8217;s a code generator extension, you will want to check the &lt;code&gt;generate-code&lt;/code&gt; goal is present in the &lt;code&gt;quarkus-maven-plugin&lt;/code&gt; &lt;code&gt;executions&lt;/code&gt; section. Default Quarkus generated projects have it but custom or older projects might not:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-xml hljs&quot; data-lang=&quot;xml&quot;&gt;&amp;lt;plugin&amp;gt;
+  &amp;lt;groupId&amp;gt;io.quarkus&amp;lt;/groupId&amp;gt;
+  &amp;lt;artifactId&amp;gt;quarkus-maven-plugin&amp;lt;/artifactId&amp;gt;
+  &amp;lt;extensions&amp;gt;true&amp;lt;/extensions&amp;gt;
+  &amp;lt;executions&amp;gt;
+    &amp;lt;execution&amp;gt;
+      &amp;lt;goals&amp;gt;
+        &amp;lt;goal&amp;gt;build&amp;lt;/goal&amp;gt;
+        &amp;lt;goal&amp;gt;generate-code&amp;lt;/goal&amp;gt;
+      &amp;lt;/goals&amp;gt;
+    &amp;lt;/execution&amp;gt;
+  &amp;lt;/executions&amp;gt;
+&amp;lt;/plugin&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Add the necessary dependencies, we are going to replace the default HTTP and JSON serialization libraries published by Microsoft and swap in Vert.X and Jackson (published from this &lt;a href=&quot;https://github.com/kiota-community/kiota-java-extra&quot;&gt;repository&lt;/a&gt;) as they nicely play with the rest of the stack of a typical Quarkus based application.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-xml hljs&quot; data-lang=&quot;xml&quot;&gt;&amp;lt;dependency&amp;gt;
+  &amp;lt;groupId&amp;gt;com.microsoft.kiota&amp;lt;/groupId&amp;gt;
+  &amp;lt;artifactId&amp;gt;microsoft-kiota-abstractions&amp;lt;/artifactId&amp;gt;
+  &amp;lt;version&amp;gt;${kiota.libs.version}&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&amp;lt;dependency&amp;gt;
+  &amp;lt;groupId&amp;gt;io.kiota&amp;lt;/groupId&amp;gt;
+  &amp;lt;artifactId&amp;gt;kiota-http-vertx&amp;lt;/artifactId&amp;gt; &amp;lt;!-- alternatively &amp;lt;artifactId&amp;gt;kiota-http-jdk&amp;lt;/artifactId&amp;gt; --&amp;gt;
+  &amp;lt;version&amp;gt;{kiota-java-extra.version}&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&amp;lt;dependency&amp;gt;
+  &amp;lt;groupId&amp;gt;io.kiota&amp;lt;/groupId&amp;gt;
+  &amp;lt;artifactId&amp;gt;kiota-serialization-jackson-quarkus&amp;lt;/artifactId&amp;gt;
+  &amp;lt;version&amp;gt;{kiota-java-extra.version}&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&amp;lt;dependency&amp;gt;
+  &amp;lt;groupId&amp;gt;com.microsoft.kiota&amp;lt;/groupId&amp;gt;
+  &amp;lt;artifactId&amp;gt;microsoft-kiota-serialization-text&amp;lt;/artifactId&amp;gt;
+  &amp;lt;version&amp;gt;${kiota.libs.version}&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&amp;lt;dependency&amp;gt;
+  &amp;lt;groupId&amp;gt;com.microsoft.kiota&amp;lt;/groupId&amp;gt;
+  &amp;lt;artifactId&amp;gt;microsoft-kiota-serialization-form&amp;lt;/artifactId&amp;gt;
+  &amp;lt;version&amp;gt;${kiota.libs.version}&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&amp;lt;dependency&amp;gt;
+  &amp;lt;groupId&amp;gt;com.microsoft.kiota&amp;lt;/groupId&amp;gt;
+  &amp;lt;artifactId&amp;gt;microsoft-kiota-serialization-multipart&amp;lt;/artifactId&amp;gt;
+  &amp;lt;version&amp;gt;${kiota.libs.version}&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&amp;lt;dependency&amp;gt;
+  &amp;lt;groupId&amp;gt;jakarta.annotation&amp;lt;/groupId&amp;gt;
+  &amp;lt;artifactId&amp;gt;jakarta.annotation-api&amp;lt;/artifactId&amp;gt;
+&amp;lt;/dependency&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Now we need to generate the actual client for our OpenAPI description, to do so, you should drop the OpenAPI file (in &lt;code&gt;yaml&lt;/code&gt; or &lt;code&gt;json&lt;/code&gt; format) in the &lt;code&gt;src/main/openapi&lt;/code&gt; folder of your project.
+You are all set to use the client in your application!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-java hljs&quot; data-lang=&quot;java&quot;&gt;import io.apisdk.example.yaml.ApiClient;
+import io.kiota.http.vertx.VertXRequestAdapter;
+
+var client = new ApiClient(new VertXRequestAdapter(vertx));
+client.&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;striking &lt;code&gt;.&lt;/code&gt; after client, the code completion of your IDE kicks in and provide you a beautiful, fully typed, builder pattern matching the endopoint descriptions provided in the OpenAPI specification.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;imageblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;img src=&quot;/assets/images/posts/kiota/completion.jpeg&quot; alt=&quot;Code Completion&quot;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For example an endpoint definition like &lt;a href=&quot;https://github.com/Apicurio/apicurio-registry/blob/6882af10e9de8e1d245006db01f039b1fbf6355a/common/src/main/resources/META-INF/openapi-v2.json#L668&quot;&gt;this one&lt;/a&gt; nicely unroll in Java as:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-java hljs&quot; data-lang=&quot;java&quot;&gt;client
+  .groups()
+  .byGroupId(groupId)
+  .artifacts()
+  .byArtifactId(artifactId)
+  .meta()
+  .get();&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;come-join-us&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#come-join-us&quot;&gt;&lt;/a&gt;Come Join Us&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We value your feedback a lot so please report bugs, ask for improvements&amp;#8230;&amp;#8203; Let&amp;#8217;s build something great together!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you are a Quarkus-Kiota user or just curious, don&amp;#8217;t be shy and join our welcoming community:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;provide feedback on &lt;a href=&quot;https://github.com/quarkiverse/quarkus-kiota/issues&quot;&gt;GitHub&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;craft some code and &lt;a href=&quot;https://github.com/quarkiverse/quarkus-kiota/pulls&quot;&gt;push a PR&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
             </description>
-            <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
+            <pubDate>Tue, 27 Feb 2024 00:00:00 +0000</pubDate>
             <guid>
-                https://quarkus.io/blog/wipro-customer-story/
+                https://quarkus.io/blog/quarkus-kiota/
             </guid>
+            
+            
+            
+            <author>Andrea Peruffo (https://twitter.com/and_prf)</author>
+            
         </item>
         
         <item>
-            <title>Quarkus 1.7.3.Final released - Bugfixes</title>
+            <title>Quarkus 3.7.4 released - Maintenance release</title>
             <link>
-                https://quarkus.io/blog/quarkus-1-7-3-final-released/
+                https://quarkus.io/blog/quarkus-3-7-4-released/
             </link>
             <description>
-                Today, we released Quarkus 1.7.3.Final with some bugfixes and documentation improvements. It is a safe upgrade for everyone using 1.7.0.Final, 1.7.1.Final or 1.7.2.Final. What&#8217;s new? This release is a maintenance release that fixes various bugs found in 1.7.2.Final and provides some documentation updates. Thanks to our contributors, we also made...
+                &lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Today, we released Quarkus 3.7.4, our third (we skipped 3.7.0) maintenance release for the 3.7 release train.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This release contains bugfixes and documentation improvements.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It should be a safe upgrade for anyone already using 3.7.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;update&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#update&quot;&gt;&lt;/a&gt;Update&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To update to Quarkus 3.7, we recommend updating to the latest version of the Quarkus CLI and run:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-bash hljs&quot; data-lang=&quot;bash&quot;&gt;quarkus update&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Note that &lt;code&gt;quarkus update&lt;/code&gt; can update your applications from any version of Quarkus (including 2.x) to Quarkus 3.7.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To migrate from 3.6, please refer to &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.7&quot;&gt;our migration guide&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you are not already using 3.x, please refer to the &lt;a href=&quot;https://quarkus.io/blog/quarkus-3-0-final-released/&quot;&gt;3.0 announcement&lt;/a&gt; for all the details.
+You can also refer to &lt;a href=&quot;https://quarkus.io/blog/quarkus-3-upgrade/&quot;&gt;this blog post&lt;/a&gt; for additional details.
+Once you upgraded to 3.0, also have a look at the &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.1&quot;&gt;3.1&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.2&quot;&gt;3.2&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.3&quot;&gt;3.3&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.4&quot;&gt;3.4&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.5&quot;&gt;3.5&lt;/a&gt;, and &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.6&quot;&gt;3.6&lt;/a&gt; migration guides.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;full-changelog&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#full-changelog&quot;&gt;&lt;/a&gt;Full changelog&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You can get &lt;a href=&quot;https://github.com/quarkusio/quarkus/releases/tag/3.7.4&quot;&gt;the full changelog of 3.7.4 on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;come-join-us&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#come-join-us&quot;&gt;&lt;/a&gt;Come Join Us&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We value your feedback a lot so please report bugs, ask for improvements&amp;#8230;&amp;#8203; Let&amp;#8217;s build something great together!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you are a Quarkus user or just curious, don&amp;#8217;t be shy and join our welcoming community:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;provide feedback on &lt;a href=&quot;https://github.com/quarkusio/quarkus/issues&quot;&gt;GitHub&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;craft some code and &lt;a href=&quot;https://github.com/quarkusio/quarkus/pulls&quot;&gt;push a PR&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;discuss with us on &lt;a href=&quot;https://quarkusio.zulipchat.com/&quot;&gt;Zulip&lt;/a&gt; and on the &lt;a href=&quot;https://groups.google.com/d/forum/quarkus-dev&quot;&gt;mailing list&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ask your questions on &lt;a href=&quot;https://stackoverflow.com/questions/tagged/quarkus&quot;&gt;Stack Overflow&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
             </description>
-            <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+            <pubDate>Wed, 21 Feb 2024 00:00:00 +0000</pubDate>
             <guid>
-                https://quarkus.io/blog/quarkus-1-7-3-final-released/
+                https://quarkus.io/blog/quarkus-3-7-4-released/
             </guid>
+            
+            
+            
+            <author>Guillaume Smet (https://twitter.com/gsmet_)</author>
+            
         </item>
         
         <item>
-            <title>Combining Apache Kafka and the Rest client</title>
+            <title>Quarkus 3.7.3 released - Maintenance release</title>
             <link>
-                https://quarkus.io/blog/kafka-rest-client/
+                https://quarkus.io/blog/quarkus-3-7-3-released/
             </link>
             <description>
-                Another week, another interesting question. This week, someone asks me about combining Kafka and the Rest Client. That is a recurring subject, and most of the time, the goal is to achieve the following process: In other words, we want to call a remote service for each Kafka message we...
+                &lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Today, we released Quarkus 3.7.3, our second (we skipped 3.7.0) maintenance release for the 3.7 release train.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This release contains bugfixes and documentation improvements.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It should be a safe upgrade for anyone already using 3.7.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;update&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#update&quot;&gt;&lt;/a&gt;Update&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To update to Quarkus 3.7, we recommend updating to the latest version of the Quarkus CLI and run:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-bash hljs&quot; data-lang=&quot;bash&quot;&gt;quarkus update&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Note that &lt;code&gt;quarkus update&lt;/code&gt; can update your applications from any version of Quarkus (including 2.x) to Quarkus 3.7.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To migrate from 3.6, please refer to &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.7&quot;&gt;our migration guide&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you are not already using 3.x, please refer to the &lt;a href=&quot;https://quarkus.io/blog/quarkus-3-0-final-released/&quot;&gt;3.0 announcement&lt;/a&gt; for all the details.
+You can also refer to &lt;a href=&quot;https://quarkus.io/blog/quarkus-3-upgrade/&quot;&gt;this blog post&lt;/a&gt; for additional details.
+Once you upgraded to 3.0, also have a look at the &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.1&quot;&gt;3.1&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.2&quot;&gt;3.2&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.3&quot;&gt;3.3&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.4&quot;&gt;3.4&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.5&quot;&gt;3.5&lt;/a&gt;, and &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.6&quot;&gt;3.6&lt;/a&gt; migration guides.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;full-changelog&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#full-changelog&quot;&gt;&lt;/a&gt;Full changelog&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You can get &lt;a href=&quot;https://github.com/quarkusio/quarkus/releases/tag/3.7.3&quot;&gt;the full changelog of 3.7.3 on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;come-join-us&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#come-join-us&quot;&gt;&lt;/a&gt;Come Join Us&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We value your feedback a lot so please report bugs, ask for improvements&amp;#8230;&amp;#8203; Let&amp;#8217;s build something great together!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you are a Quarkus user or just curious, don&amp;#8217;t be shy and join our welcoming community:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;provide feedback on &lt;a href=&quot;https://github.com/quarkusio/quarkus/issues&quot;&gt;GitHub&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;craft some code and &lt;a href=&quot;https://github.com/quarkusio/quarkus/pulls&quot;&gt;push a PR&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;discuss with us on &lt;a href=&quot;https://quarkusio.zulipchat.com/&quot;&gt;Zulip&lt;/a&gt; and on the &lt;a href=&quot;https://groups.google.com/d/forum/quarkus-dev&quot;&gt;mailing list&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ask your questions on &lt;a href=&quot;https://stackoverflow.com/questions/tagged/quarkus&quot;&gt;Stack Overflow&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
             </description>
-            <pubDate>Tue, 08 Sep 2020 00:00:00 +0000</pubDate>
+            <pubDate>Wed, 14 Feb 2024 00:00:00 +0000</pubDate>
             <guid>
-                https://quarkus.io/blog/kafka-rest-client/
+                https://quarkus.io/blog/quarkus-3-7-3-released/
             </guid>
+            
+            
+            
+            <author>Guillaume Smet (https://twitter.com/gsmet_)</author>
+            
         </item>
         
         <item>
-            <title>Quarkus 1.7.2.Final released - Bugfixes</title>
+            <title>Quarkus Newsletter #41 - February</title>
             <link>
-                https://quarkus.io/blog/quarkus-1-7-2-final-released/
+                https://quarkus.io/blog/quarkus-newsletter-41/
             </link>
             <description>
-                Today, we released Quarkus 1.7.2.Final with some bugfixes and documentation improvements. It is a safe upgrade for everyone using 1.7.0.Final or 1.7.1.Final. What&#8217;s new? This release is a maintenance release that fixes various bugs found in 1.7.1.Final and provides some documentation updates. You can get the full changelog of 1.7.2.Final...
+                &lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Learn how to create a Quarkus extension that provides three features that notify an API regarding the application&amp;#8217;s starting status, offers a implementation class created with Gizmo, and count the number of methods using Jandex in &quot;Developing a Quarkus Extension&quot; by Matheus Cruz. Check out &quot;Serverless on Azure Function with Quarkus&quot; by Piotr Minkowski to see how to create and run serverless apps on Azure Function using the Quarkus Funqy extension. Learn how to use Wiremock with Quarkus to performing quality testing of your code with &quot;Wiremock &amp;amp; Quarkus: How to configure it&quot; by Daniel S. Blanco. Read &quot;Connect a Quarkus app to an external SQL Server database&quot; by Nikhil Mungale to learn how to use an external database with Quarkus and link an example application to an external Microsoft SQL Server database in this tutorial.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You will also see the latest Quarkus Insights episodes, top tweets and upcoming Quarkus attended events.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Check out &lt;a href=&quot;https://quarkus.io/newsletter/41/&quot;&gt;Newsletter #41: February&lt;/a&gt;!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Want to get newsletters in your inbox? &lt;a href=&quot;https://quarkus.io/newsletter&quot;&gt;Sign up for the newsletter&lt;/a&gt; using the on page form.&lt;/p&gt;
+&lt;/div&gt;
             </description>
-            <pubDate>Thu, 03 Sep 2020 00:00:00 +0000</pubDate>
+            <pubDate>Tue, 13 Feb 2024 00:00:00 +0000</pubDate>
             <guid>
-                https://quarkus.io/blog/quarkus-1-7-2-final-released/
+                https://quarkus.io/blog/quarkus-newsletter-41/
             </guid>
+            
+            
+            
+            <author>James Cobb (https://twitter.com/insectengine)</author>
+            
         </item>
         
         <item>
-            <title>Using Redis with Mutiny - Composing asynchronous actions</title>
+            <title>Quarkus 3.7.2 released - Maintenance release</title>
             <link>
-                https://quarkus.io/blog/mutiny-redis/
+                https://quarkus.io/blog/quarkus-3-7-2-released/
             </link>
             <description>
-                I got an interesting question from a user about Redis and Mutiny. While the problem was not specifically about Redis and could be applied to many other APIs, I found the context amusing. Enrico, the user, wanted to do something like this: 1. get all keys from Redis 2. for...
+                &lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Today, we released Quarkus 3.7.2, our first (we skipped 3.7.0) maintenance release for the 3.7 release train.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This release contains bugfixes and documentation improvements together with an upgrade of Vert.x to fix CVE-2024-1300.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It should be a safe upgrade for anyone already using 3.7.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;update&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#update&quot;&gt;&lt;/a&gt;Update&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To update to Quarkus 3.7, we recommend updating to the latest version of the Quarkus CLI and run:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-bash hljs&quot; data-lang=&quot;bash&quot;&gt;quarkus update&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Note that &lt;code&gt;quarkus update&lt;/code&gt; can update your applications from any version of Quarkus (including 2.x) to Quarkus 3.7.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To migrate from 3.6, please refer to &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.7&quot;&gt;our migration guide&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you are not already using 3.x, please refer to the &lt;a href=&quot;https://quarkus.io/blog/quarkus-3-0-final-released/&quot;&gt;3.0 announcement&lt;/a&gt; for all the details.
+You can also refer to &lt;a href=&quot;https://quarkus.io/blog/quarkus-3-upgrade/&quot;&gt;this blog post&lt;/a&gt; for additional details.
+Once you upgraded to 3.0, also have a look at the &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.1&quot;&gt;3.1&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.2&quot;&gt;3.2&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.3&quot;&gt;3.3&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.4&quot;&gt;3.4&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.5&quot;&gt;3.5&lt;/a&gt;, and &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.6&quot;&gt;3.6&lt;/a&gt; migration guides.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;full-changelog&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#full-changelog&quot;&gt;&lt;/a&gt;Full changelog&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You can get &lt;a href=&quot;https://github.com/quarkusio/quarkus/releases/tag/3.7.2&quot;&gt;the full changelog of 3.7.2 on GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;come-join-us&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#come-join-us&quot;&gt;&lt;/a&gt;Come Join Us&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We value your feedback a lot so please report bugs, ask for improvements&amp;#8230;&amp;#8203; Let&amp;#8217;s build something great together!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you are a Quarkus user or just curious, don&amp;#8217;t be shy and join our welcoming community:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;provide feedback on &lt;a href=&quot;https://github.com/quarkusio/quarkus/issues&quot;&gt;GitHub&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;craft some code and &lt;a href=&quot;https://github.com/quarkusio/quarkus/pulls&quot;&gt;push a PR&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;discuss with us on &lt;a href=&quot;https://quarkusio.zulipchat.com/&quot;&gt;Zulip&lt;/a&gt; and on the &lt;a href=&quot;https://groups.google.com/d/forum/quarkus-dev&quot;&gt;mailing list&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ask your questions on &lt;a href=&quot;https://stackoverflow.com/questions/tagged/quarkus&quot;&gt;Stack Overflow&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
             </description>
-            <pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate>
+            <pubDate>Thu, 08 Feb 2024 00:00:00 +0000</pubDate>
             <guid>
-                https://quarkus.io/blog/mutiny-redis/
+                https://quarkus.io/blog/quarkus-3-7-2-released/
             </guid>
+            
+            
+            
+            <author>Guillaume Smet (https://twitter.com/gsmet_)</author>
+            
         </item>
         
         <item>
-            <title>Quarkus Hackathon Winners</title>
+            <title>Quarkus 3.7 - Java 17 baseline, Hibernate ORM 6.4, @MeterTag...</title>
             <link>
-                https://quarkus.io/blog/quarkus-hackathon-winners-announced/
+                https://quarkus.io/blog/quarkus-3-7-released/
             </link>
             <description>
-                Congratulations to the Winners The winners of the Supersonic, Subatomic Java Hackathon were announced on Friday during a “live judging” session. The submissions greatly exceeded expectations and the process of selecting the winners was difficult. Best Overall ($10,000) Slurpanize Best Serverless ($5,000) BrightAct Against Domestic Violence Best Kubernetes-native ($5,000) Slurpanize...
+                &lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It is with great pleasure that we are announcing the release of Quarkus 3.7.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;With Quarkus 3.7, we begin the journey that will lead to Quarkus 3.8 being the next LTS version of Quarkus.
+We strongly encourage you to update to this version and provide feedback to make our next LTS version strong and stable.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Major changes are:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/quarkusio/quarkus/pull/37335&quot;&gt;#37335&lt;/a&gt; - Java 17 is the new baseline&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/quarkusio/quarkus/pull/38190&quot;&gt;#38190&lt;/a&gt; - Rename RESTEasy Classic client extensions to resteasy-client&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/quarkusio/quarkus/pull/36978&quot;&gt;#36978&lt;/a&gt; - Upgrade to Hibernate ORM 6.4, Hibernate Search 7.0, Hibernate Reactive 2.2&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/quarkusio/quarkus/pull/35065&quot;&gt;#35065&lt;/a&gt; - Add Hibernate Search management endpoint&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/quarkusio/quarkus/pull/36945&quot;&gt;#36945&lt;/a&gt; - Support Micrometer &lt;code&gt;@MeterTag&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/quarkusio/quarkus/pull/37152&quot;&gt;#37152&lt;/a&gt; - Support token verification with the inlined certificate chain&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/quarkusio/quarkus/pull/37269&quot;&gt;#37269&lt;/a&gt; - Support certificate role mappings&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/quarkusio/quarkus/pull/37472&quot;&gt;#37472&lt;/a&gt; - Provide a way to observe security events&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/quarkusio/quarkus/pull/37730&quot;&gt;#37730&lt;/a&gt; - Introduce LinkedIn OIDC provider&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/quarkusio/quarkus/pull/37891&quot;&gt;#37891&lt;/a&gt; - Split OIDC session cookie if its size is more than 4KB&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/quarkusio/quarkus/pull/38029&quot;&gt;#38029&lt;/a&gt; - Allow applications using quakus-info to contribute data to the /info using CDI&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/quarkusio/quarkus/pull/38066&quot;&gt;#38066&lt;/a&gt; - Drop Okhttp/Okio from BOM&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;3.7.1 also fixes the following CVEs:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://access.redhat.com/security/cve/CVE-2023-5675&quot;&gt;CVE-2023-5675&lt;/a&gt; Authorization flaw in Quarkus RESTEasy Reactive and Classic when &lt;code&gt;quarkus.security.jaxrs.deny-unannotated-endpoints&lt;/code&gt; or &lt;code&gt;quarkus.security.jaxrs.default-roles-allowed&lt;/code&gt; properties are used&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://access.redhat.com/security/cve/CVE-2023-6267&quot;&gt;CVE-2023-6267&lt;/a&gt; JSON payload getting processed prior to security checks when REST resources are used with annotations&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We also released 3.6.9 to address these issues in 3.6, in case you encounter problems updating to 3.7.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;As usual, this version also comes with bugfixes, performance improvements and documentation improvements.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;As mentioned in the previous minor announcement, we currently maintain two version streams in the community:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;3.7: it is the latest and greatest and it introduces new features&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;3.2: it is our current &lt;a href=&quot;/blog/lts-releases/&quot;&gt;LTS release&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Quarkus 2.x is not maintained in the community anymore.
+If you are using the community version, please upgrade to Quarkus 3.x (either 3.2 LTS or 3.7).
+We recommend using &lt;code&gt;quarkus update&lt;/code&gt; to do so.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;update&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#update&quot;&gt;&lt;/a&gt;Update&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To update to Quarkus 3.7, we recommend updating to the latest version of the Quarkus CLI and run:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;highlightjs highlight&quot;&gt;&lt;code class=&quot;language-bash hljs&quot; data-lang=&quot;bash&quot;&gt;quarkus update&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Note that &lt;code&gt;quarkus update&lt;/code&gt; can update your applications from any version of Quarkus (including 2.x) to Quarkus 3.7.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;To migrate from 3.6, please refer to &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.7&quot;&gt;our migration guide&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you are not already using 3.x, please refer to the &lt;a href=&quot;https://quarkus.io/blog/quarkus-3-0-final-released/&quot;&gt;3.0 announcement&lt;/a&gt; for all the details.
+You can also refer to &lt;a href=&quot;https://quarkus.io/blog/quarkus-3-upgrade/&quot;&gt;this blog post&lt;/a&gt; for additional details.
+Once you upgraded to 3.0, also have a look at the &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.1&quot;&gt;3.1&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.2&quot;&gt;3.2&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.3&quot;&gt;3.3&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.4&quot;&gt;3.4&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.5&quot;&gt;3.5&lt;/a&gt;, and &lt;a href=&quot;https://github.com/quarkusio/quarkus/wiki/Migration-Guide-3.6&quot;&gt;3.6&lt;/a&gt; migration guides.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats-new&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#whats-new&quot;&gt;&lt;/a&gt;What&amp;#8217;s new?&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;java-17-is-the-new-baseline&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#java-17-is-the-new-baseline&quot;&gt;&lt;/a&gt;Java 17 is the new baseline&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;As was announced at &lt;a href=&quot;https://quarkus.io/blog/java-17/&quot;&gt;the end of November&lt;/a&gt;, you will need a Java 17+ runtime (using Java 21 is encouraged!) to run Quarkus 3.7 applications.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;When we released Quarkus 3.0, we announced that Java 11 support was deprecated and would go away at some point.
+This is the time.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Most of the Java ecosystem is moving to Java 17 as the baseline so it wasn&amp;#8217;t sustainable for Quarkus to support Java 11 much longer.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If your Java 17 migration is ongoing, you can upgrade to the latest 3.6 but keep in mind that 3.6.9 released today is the latest 3.6.
+If you are stuck with Java 11 for some time, we recommend using Quarkus 3.2 LTS as it will be maintained longer.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;resteasy-classic-client-extensions-renamed&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#resteasy-classic-client-extensions-renamed&quot;&gt;&lt;/a&gt;RESTEasy Classic Client extensions renamed&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;As part of the renaming of the RESTEasy Reactive extensions that will be spread across several releases, we renamed the &lt;code&gt;quarkus-rest-client*&lt;/code&gt; extensions (client extensions for RESTEasy Classic) to &lt;code&gt;quarkus-resteasy-client*&lt;/code&gt;, which makes it clearer that it is the client counterpart of &lt;code&gt;quarkus-resteasy&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Relocations have been put in place to not break your applications but we recommend that you adjust your applications already as these particular artifacts (&lt;code&gt;quarkus-rest-client*&lt;/code&gt;) will be switched to RESTEasy Reactive in Quarkus 3.9.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;See &lt;a href=&quot;https://github.com/quarkusio/quarkus/blob/main/adr/0002-reactive-rename.adoc&quot; class=&quot;bare&quot;&gt;https://github.com/quarkusio/quarkus/blob/main/adr/0002-reactive-rename.adoc&lt;/a&gt; for the full context of this change.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We encourage you to move to the new artifacts listed in the following table:&lt;/p&gt;
+&lt;/div&gt;
+&lt;table class=&quot;tableblock frame-all grid-all stretch&quot;&gt;
+&lt;colgroup&gt;
+&lt;col style=&quot;width: 50%;&quot;&gt;
+&lt;col style=&quot;width: 50%;&quot;&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th class=&quot;tableblock halign-left valign-top&quot;&gt;Old name&lt;/th&gt;
+&lt;th class=&quot;tableblock halign-left valign-top&quot;&gt;New name&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;quarkus-rest-client&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;quarkus-resteasy-client&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;quarkus-rest-client-jackson&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;quarkus-resteasy-client-jackson&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;quarkus-rest-client-jaxb&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;quarkus-resteasy-client-jaxb&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;quarkus-rest-client-jsonb&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;quarkus-resteasy-client-jsonb&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;quarkus-rest-client-mutiny&lt;/p&gt;&lt;/td&gt;
+&lt;td class=&quot;tableblock halign-left valign-top&quot;&gt;&lt;p class=&quot;tableblock&quot;&gt;quarkus-resteasy-client-mutiny&lt;/p&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;hibernate-orm-6-4-hibernate-search-7-0-hibernate-reactive-2-2&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#hibernate-orm-6-4-hibernate-search-7-0-hibernate-reactive-2-2&quot;&gt;&lt;/a&gt;Hibernate ORM 6.4, Hibernate Search 7.0, Hibernate Reactive 2.2&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We updated the Hibernate persistence stack to:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Hibernate ORM 6.4 - see &lt;a href=&quot;https://in.relation.to/2023/11/23/orm-640-final/&quot;&gt;announcement&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hibernate Search 7.0 - see &lt;a href=&quot;https://in.relation.to/2023/12/05/hibernate-search-7-0-0-Final/&quot;&gt;announcement&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Hibernate Reactive 2.2 - see &lt;a href=&quot;https://in.relation.to/2023/11/28/hibernate-reactive-2_2_Final/&quot;&gt;announcement&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We now expose a management endpoint for Hibernate Search, which allows to trigger mass indexing and other maintenance tasks.
+You can find out more about it in the &lt;a href=&quot;https://quarkus.io/guides/hibernate-search-orm-elasticsearch#management&quot;&gt;updated documentation&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;micrometer-metertag&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#micrometer-metertag&quot;&gt;&lt;/a&gt;Micrometer @MeterTag&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Micrometer &lt;code&gt;@MeterTag&lt;/code&gt; can now be used to dynamically assign tag values to metrics.
+See the &lt;a href=&quot;https://quarkus.io/guides/telemetry-micrometer#annotations&quot;&gt;dedicated doc section&lt;/a&gt; for more information.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;assorted-security-improvements&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#assorted-security-improvements&quot;&gt;&lt;/a&gt;Assorted security improvements&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Our security extensions got a bunch of new features, improvements:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/quarkusio/quarkus/pull/37152&quot;&gt;#37152&lt;/a&gt; - Support token verification with the inlined certificate chain&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/quarkusio/quarkus/pull/37269&quot;&gt;#37269&lt;/a&gt; - Support certificate role mappings&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/quarkusio/quarkus/pull/37472&quot;&gt;#37472&lt;/a&gt; - Provide a way to observe security events&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/quarkusio/quarkus/pull/37730&quot;&gt;#37730&lt;/a&gt; - Introduce LinkedIn OIDC provider&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/quarkusio/quarkus/pull/37891&quot;&gt;#37891&lt;/a&gt; - Split OIDC session cookie if its size is more than 4KB&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;contribute-data-to-info-endpoint&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#contribute-data-to-info-endpoint&quot;&gt;&lt;/a&gt;Contribute data to /info endpoint&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;All CDI beans implementing &lt;code&gt;InfoContributor&lt;/code&gt; will contribute to the &lt;code&gt;/info&lt;/code&gt; endpoint.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;okhttpokio-versions-not-enforced-anymore&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#okhttpokio-versions-not-enforced-anymore&quot;&gt;&lt;/a&gt;Okhttp/Okio versions not enforced anymore&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;As we didn&amp;#8217;t want to rely on the Kotlin runtime for non-Kotlin-related extensions,
+we were enforcing a very old version of Okhttp in Quarkus,
+thus making using newer Okhttp version harder.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For several versions, we have been working on reducing our dependency to Okhttp
+to be able to avoid enforcing the version in Quarkus.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This is now effective in 3.7.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;full-changelog&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#full-changelog&quot;&gt;&lt;/a&gt;Full changelog&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You can get the full changelog of &lt;a href=&quot;https://github.com/quarkusio/quarkus/releases/tag/3.7.0.CR1&quot;&gt;3.7.0.CR1&lt;/a&gt;, &lt;a href=&quot;https://github.com/quarkusio/quarkus/releases/tag/3.7.0&quot;&gt;3.7.0&lt;/a&gt;, and &lt;a href=&quot;https://github.com/quarkusio/quarkus/releases/tag/3.7.1&quot;&gt;3.7.1&lt;/a&gt; on GitHub.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;contributors&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#contributors&quot;&gt;&lt;/a&gt;Contributors&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The Quarkus community is growing and has now &lt;a href=&quot;https://github.com/quarkusio/quarkus/graphs/contributors&quot;&gt;903 contributors&lt;/a&gt;.
+Many many thanks to each and everyone of them.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In particular for the 3.7 release, thanks to a29340, Abdul Rauf, Ales Justin, Alex Katlein, Alex Martel, Alexei Bratuhin, Alexey Loubyansky, Alexey Kovynev, Andrea Peruffo, Andreas Eberle, Andy Damevin, Anton Vasilev, Auri Munoz, barreiro, Bas Passon, Benedikt Schneppe, Bernhard Schuhmann, Björn Großewinkelmann, Björn Konrad, Bruno Baptista, Bruno Caballero, brunobat, Carles Arnal, Chris Laprun, Christian Thiel, Clement Escoffier, David Andlinger, David M. Lloyd, Davide D&amp;#8217;Alto, Debabrata Patnaik, elendis, Eric Deandrea, Erin Schnabel, Falko Modler, Fedor Dudinskiy, Foivos Zakkak, Fortran, Francesco Nigro, Frantisek Havel, Gasper Kojek, George Gastaldi, Georgios Andrianakis, Gero Müller, Guillaume Smet, Håkan Öström, Idryss Bourdier, Ioannis Canellos, Jakub Jedlicka, Jakub Scholz, Jan Martiska, Jerome Prinet, Jiří Locker, Jonathan Kolberg, Jorge Solórzano, Jose Carranza, jtama, Julien Ponge, Justin Lee, Katia Aresti, Ladislav Thon, Leonor Boga, Loïc Mathieu, luca-bassoricci, Luke Morfill, Maciej Lisowski, Marc Nuri, Marco Schaub, Marek Skacelik, Marko Bekhta, Martin Kofoed, Martin Kouba, Marvin B. Lillehaug, Matej Novotny, Matheus Cruz, Max Rydahl Andersen, mert18, Michael Edgar, Michael Musgrove, Michael Rasmussen, Michal Karm Babacek, Michal Maléř, Michal Vavřík, Michelle Purcell, Mickey Maler, Miroslav Vasko, Ozan Gunalp, Pablo Gonzalez Granados, Peter Palaga, Phillip Krüger, Radim Vansa, rmartinc, Roberto Cortez, rob.spoor, Rolfe Dlugy-Hegwer, Rostislav Svoboda, Sanne Grinovero, Sebastian Schuster, Sergey Beryozkin, Severin Gehwolf, shjones, SIMULATAN, Stephan Strate, stianst, Stuart Douglas, Stéphane Épardaud, Tamaro Skaljic, troosan, Vitaliy Baschlykoff, Waldemar Reusch, Welton Rodrigo Torres Nascimento, Wladimir Hofmann, wrongwrong, xstefank, and Yoann Rodière.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;come-join-us&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#come-join-us&quot;&gt;&lt;/a&gt;Come Join Us&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We value your feedback a lot so please report bugs, ask for improvements&amp;#8230;&amp;#8203; Let&amp;#8217;s build something great together!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you are a Quarkus user or just curious, don&amp;#8217;t be shy and join our welcoming community:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;provide feedback on &lt;a href=&quot;https://github.com/quarkusio/quarkus/issues&quot;&gt;GitHub&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;craft some code and &lt;a href=&quot;https://github.com/quarkusio/quarkus/pulls&quot;&gt;push a PR&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;discuss with us on &lt;a href=&quot;https://quarkusio.zulipchat.com/&quot;&gt;Zulip&lt;/a&gt; and on the &lt;a href=&quot;https://groups.google.com/d/forum/quarkus-dev&quot;&gt;mailing list&lt;/a&gt;;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ask your questions on &lt;a href=&quot;https://stackoverflow.com/questions/tagged/quarkus&quot;&gt;Stack Overflow&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
             </description>
-            <pubDate>Sat, 29 Aug 2020 00:00:00 +0000</pubDate>
+            <pubDate>Wed, 31 Jan 2024 00:00:00 +0000</pubDate>
             <guid>
-                https://quarkus.io/blog/quarkus-hackathon-winners-announced/
+                https://quarkus.io/blog/quarkus-3-7-released/
             </guid>
+            
+            
+            
+            <author>Guillaume Smet (https://twitter.com/gsmet_)</author>
+            
         </item>
         
     </channel>
